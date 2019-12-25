@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <style>
+    body {
+      margin: 0; /* bodyのリセット*/
+    }
+    .app {
+      position: relative; /* positionには3種類あるが、そのうちの一つ */
+      height: 100%; /* アプリ全体を覆っているdivで使っているので、そのdivを画面の高さいっぱいに設定する */
+      background-color: #FFFDF6;
+    }
+    .appbar {
+      background-color: #26567E;  /* 背景色 */
+      color: #fff;  /* 文字色 */
+      padding: 12px;  /* 文字上下の空白*/
+      text-align: center; /* 文字の位置 */
+      box-shadow: 0 2px 2px rgba(0,0,0,0.6); /* 影: x方向にずらす y方向にずらす ブラーレベル rgba（rgbはそのまま、aは透明度）*/
+    }
+    .memo-list{
+      padding-top: 5px;
+    }
+    .memo-list-item{
+      background-color: #fff;
+      padding: 12px;  /* 上下の空白 */
+      border-bottom: 1px solid #ddd; /*下の罫線: 太さ 実践 色 */
+    }
+    .memo-list-item h3 {
+      font-size: 18px;
+      margin: 0;
+    }
+    .memo-list-item p {
+      font-size: 11px;
+      color: #a2a2a2;
+      margin: 0;
+    }
+
+    .memo-add-button {
+      width: 50px;
+      height: 50px;
+      background-color: #E31676;  /*  */
+      color: #fff;  /*  */
+      font-size: 24px;  /*  */
+      text-align: center; /*  */
+      line-height: 2em; /*  */
+      border-radius: 50%; /*  */
+      position: absolute; /* htmlの仕様上左上によっていく為、場所を指定するときはこのコードを入れる */
+                          /* ベースとなる枠を持つタグのポジションをしていしないといけない */
+      bottom: 24px;
+      right: 24px;
+      box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    }
+
+  </style>
+
+  <body>
+    <div class="app">
+      <div class="appbar">
+        MEMOT
+      </div>
+
+      <div class="memo-list">
+        <div class="memo-list-item">
+          <h3>
+            講座のアイデア
+          </h3>
+          <p>
+            2019/12/25
+          </p>
+        </div>
+
+        <div class="memo-list-item">
+          <h3>
+            買い出し
+          </h3>
+          <p>
+            2019/12/25
+          </p>
+        </div>
+
+        <div class="memo-list-item">
+          <h3>
+            11月のTODOリスト
+          </h3>
+          <p>
+            2019/12/25
+          </p>
+        </div>
+
+        <div class="memo-list-item">
+          <h3>
+            講座のアイデア
+          </h3>
+          <p>
+            2019/12/25
+          </p>
+        </div>
+
+        <div class="memo-list-item">
+          <h3>
+            レシピ　カルボナーラ
+          </h3>
+          <p>
+            2019/12/25
+          </p>
+        </div>
+      </div>
+
+      <div class="memo-add-button">
+        ＋
+      </div>
+    </div>
+  </body>
+</html>
